@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  MERQO ShikkhaDesk — original vector logo (horizontal lockup)
+  Design: open book (education) + verification check (verified records),
+  geometric silhouette, brand palette per docs/BRAND-GUIDELINES.md.
+  Bengali tagline is SVG <text>; it renders correctly in any SVG viewer that
+  provides Bengali complex-text shaping and a Bengali font (e.g. Noto Sans
+  Bengali, bundled in assets/fonts/).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300" role="img" aria-label="MERQO ShikkhaDesk">
+  <title>MERQO ShikkhaDesk</title>
+  <desc>Open book with a verification check mark. Tagline: coaching center-er sob kaj, ek software-e.</desc>
+
+  <!-- ===== Mark (square 260x260, placed at 20,20) ===== -->
+  <g transform="translate(20,20)">
+    <!-- open book -->
+    <polygon points="130,143 23,61 23,184 130,266" fill="#243B53"/>
+    <polygon points="130,143 237,61 237,184 130,266" fill="#102A43"/>
+    <!-- page-edge highlights -->
+    <line x1="30" y1="72" x2="122" y2="150" stroke="#E9EEF5" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+    <line x1="230" y1="72" x2="138" y2="150" stroke="#E9EEF5" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+    <!-- verification check -->
+    <polyline points="150,148 167,175 211,122" fill="none" stroke="#25C2A0" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- accent bar -->
+    <rect x="36" y="236" width="188" height="20" rx="10" fill="#25C2A0"/>
+  </g>
+
+  <!-- ===== Wordmark ===== -->
+  <text x="300" y="150" font-family="'Segoe UI','Noto Sans',Roboto,Arial,sans-serif" font-size="104" font-weight="700" fill="#102A43">ShikkhaDesk</text>
+  <text x="304" y="196" font-family="'Segoe UI','Noto Sans',Roboto,Arial,sans-serif" font-size="34" font-weight="600" fill="#25C2A0">A MERQO Product</text>
+  <!-- Bengali tagline (requires Bengali shaping + font) -->
+  <text x="304" y="240" font-family="'Noto Sans Bengali','SolaimanLipi','Nirmala UI',sans-serif" font-size="30" fill="#627D98">কোচিং সেন্টারের সব কাজ, এক সফটওয়্যারে।</text>
+</svg>

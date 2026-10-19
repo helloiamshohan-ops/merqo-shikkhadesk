@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MERQO ShikkhaDesk — original vector mark (square, 512). Source for app icon / splash. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="ShikkhaDesk mark">
+  <title>ShikkhaDesk mark</title>
+  <!-- open book -->
+  <polygon points="256,307 46,225 46,348 256,430" fill="#243B53"/>
+  <polygon points="256,307 466,225 466,348 256,430" fill="#102A43"/>
+  <!-- page-edge highlights -->
+  <line x1="59" y1="243" x2="243" y2="315" stroke="#E9EEF5" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+  <line x1="453" y1="243" x2="269" y2="315" stroke="#E9EEF5" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+  <!-- verification check -->
+  <polyline points="300,312 333,351 412,256" fill="none" stroke="#25C2A0" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- accent bar -->
+  <rect x="72" y="461" width="368" height="23" rx="11.5" fill="#25C2A0"/>
+</svg>
