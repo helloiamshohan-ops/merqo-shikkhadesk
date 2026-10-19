@@ -1,0 +1,26 @@
+<Project>
+  <!-- Shared build settings for MERQO ShikkhaDesk.
+       Cross-platform projects target net8.0; WPF projects override to
+       net8.0-windows (Windows-only). Build on Windows with .NET 8 SDK:
+         dotnet build src/ShikkhaDesk.sln
+         dotnet test  src/ShikkhaDesk.sln
+       The cross-platform core (Domain, Accounting, Licensing, Application,
+       Persistence, LanTransport, Reporting, Backup, Diagnostics) builds and
+       tests on any OS; only Presentation and LicenseManager require Windows. -->
+  <PropertyGroup>
+    <TargetFramework Condition="'$(TargetFramework)'==''">net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <Product>MERQO ShikkhaDesk</Product>
+    <Company>MERQO</Company>
+    <Authors>MERQO</Authors>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <NeutralLanguage>bn-BD</NeutralLanguage>
+  </PropertyGroup>
+</Project>

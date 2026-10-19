@@ -31,6 +31,30 @@ test was run (none is possible here). Nothing is claimed as compiled/working.
 **Next:** competitor research → brand assets (genuine ICO) → full documentation
 suite → .NET source scaffold.
 
+**Continued (same day):**
+- Completed competitor research (public sources, 2026-10-19); confirmed the
+  **Shikkha/Shiksha + …Desk naming-conflict** the prompt anticipated (ShikkhaPlus,
+  Shikkha, CoachDesk, etc.) → documented in `COMPETITOR-RESEARCH.md`, escalated as
+  DEC-1 (no silent rename). Wrote the 5 research docs + gap matrix + positioning.
+- Generated **original brand assets**: SVG vector logo + mark, multi-resolution
+  PNGs, light/dark lockups, and a **genuine multi-resolution Windows `.ico`**
+  (16–256px, verified ICONDIR type=1, 7 embedded PNG entries — not a renamed PNG).
+  Bundled SIL-OFL Noto Sans Bengali font. Wrote `BRAND-GUIDELINES.md` +
+  `BANGLA-TERMINOLOGY.md`.
+- Wrote the full documentation suite: requirements, feature matrix, architecture,
+  data model, accounting design, security plan, license design, license-manager
+  guide, LAN setup, backup/restore, installation guide, UI design spec, Bangla
+  user guide, test plan, test results, changelog.
+- Scaffolded the layered .NET solution (`src/ShikkhaDesk.sln` + 11 projects + 3
+  test projects) with **real, reviewable logic**: `Money` (integer poisha),
+  double-entry `JournalEntry` (balance + immutability + reversal), `Ledger`
+  (trial balance, profit), `PostingRules` (all standard mappings), and the
+  canonical signed institution-bound `Licensing` (sign/verify). Authored xUnit
+  suites for the financial invariants and license cases.
+- **Verification status:** docs/assets are real and (for the ICO) verified. All C#
+  is **authored, NOT compiled or tested** — no .NET runtime here. `TEST-RESULTS.md`
+  records 0 executed tests; all release gates remain OPEN.
+
 ---
 
 _(Subsequent sessions append here.)_

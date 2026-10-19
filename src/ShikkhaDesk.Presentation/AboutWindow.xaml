@@ -1,0 +1,27 @@
+<Window x:Class="ShikkhaDesk.Presentation.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="সম্পর্কে — MERQO ShikkhaDesk" Height="460" Width="520"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        FontFamily="Noto Sans Bengali, Segoe UI" Background="{StaticResource BgBrush}">
+    <StackPanel Margin="28">
+        <TextBlock Text="ShikkhaDesk" FontSize="30" FontWeight="Bold" Foreground="{StaticResource NavyBrush}" />
+        <TextBlock Text="A MERQO Product" FontSize="14" Foreground="{StaticResource TealBrush}" Margin="0,0,0,16" />
+
+        <TextBlock Text="কোচিং সেন্টারের ব্যবস্থাপনা, শিক্ষার্থী, ফি ও হিসাবের সমন্বিত সফটওয়্যার।"
+                   Foreground="{StaticResource InkBrush}" TextWrapping="Wrap" Margin="0,0,0,12" />
+        <TextBlock Text="প্রস্তুতকারক: MERQO" Foreground="{StaticResource InkBrush}" Margin="0,2" />
+        <TextBlock Text="যোগাযোগ: merqoonline@gmail.com" Foreground="{StaticResource InkBrush}" Margin="0,2" />
+
+        <Separator Margin="0,16" />
+        <TextBlock x:Name="VersionText" Text="অ্যাপ সংস্করণ: 1.0.0" Foreground="{StaticResource MutedBrush}" Margin="0,2" />
+        <TextBlock x:Name="BuildText" Text="বিল্ড/রিলিজ: 1.0.0" Foreground="{StaticResource MutedBrush}" Margin="0,2" />
+        <TextBlock x:Name="SchemaText" Text="ডেটাবেস স্কিমা সংস্করণ: 1" Foreground="{StaticResource MutedBrush}" Margin="0,2" />
+        <TextBlock x:Name="LicenseStateText" Text="লাইসেন্স স্থিতি: সক্রিয়" Foreground="{StaticResource MutedBrush}" Margin="0,2" />
+        <TextBlock Text="সহায়তা: merqoonline@gmail.com" Foreground="{StaticResource MutedBrush}" Margin="0,2" />
+        <TextBlock Text="কপিরাইট © MERQO" Foreground="{StaticResource MutedBrush}" Margin="0,12,0,0" />
+
+        <Button Content="ঠিক আছে" Click="OnOkClick" HorizontalAlignment="Right" Margin="0,20,0,0"
+                Padding="20,6" Background="{StaticResource TealBrush}" Foreground="White" BorderThickness="0" />
+    </StackPanel>
+</Window>

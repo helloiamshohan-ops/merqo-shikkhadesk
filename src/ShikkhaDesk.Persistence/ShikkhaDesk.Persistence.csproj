@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ShikkhaDesk.Persistence</RootNamespace>
+    <AssemblyName>ShikkhaDesk.Persistence</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ShikkhaDesk.Domain/ShikkhaDesk.Domain.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Application/ShikkhaDesk.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Schema + migrations. Requires NuGet (nuget.org) access at restore time. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+  </ItemGroup>
+</Project>

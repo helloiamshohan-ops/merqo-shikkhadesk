@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ShikkhaDesk.Accounting</RootNamespace>
+    <AssemblyName>ShikkhaDesk.Accounting</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ShikkhaDesk.Domain/ShikkhaDesk.Domain.csproj" />
+  </ItemGroup>
+</Project>

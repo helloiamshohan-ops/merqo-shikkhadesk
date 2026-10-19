@@ -96,11 +96,11 @@ Legend: ✅ verified · 🟡 authored-not-built · 🔴 not started · ⛔ block
 | Data model | 🟡 | `docs/DATA-MODEL.md` |
 | Accounting design | 🟡 | `docs/ACCOUNTING-DESIGN.md` |
 | License design + License Manager design | 🟡 | `docs/LICENSE-DESIGN.md`, `docs/LICENSE-MANAGER-GUIDE.md` |
-| Domain / Accounting / Licensing source | 🟡 | `src/…` authored; ⛔ not compiled/tested |
-| Persistence (SQLite + migrations) source | 🟡 | ⛔ not compiled/tested |
-| WPF Presentation source | 🟡 | ⛔ cannot build on Linux |
-| LAN host/client source | 🟡 | ⛔ not compiled/tested |
-| Automated tests (financial invariants, license, LAN) | 🔴 | ⛔ require .NET runtime to run |
+| Domain / Accounting / Licensing source | 🟡 | `src/…` scaffolded with real logic (Money, journal engine, posting rules, ledger, canonical signed license); ⛔ not compiled/tested |
+| Persistence (SQLite + migrations) source | 🟡 | schema-version + design + repo interfaces; ⛔ not compiled/tested |
+| WPF Presentation source | 🟡 | shell + About + formatter scaffolded; ⛔ cannot build on Linux |
+| LAN host/client source | 🟡 | contracts + idempotency pattern; ⛔ not compiled/tested |
+| Automated tests (financial invariants, license, LAN) | 🟡 | xUnit suites authored (Money, journal, invariants, license); ⛔ require .NET runtime to run |
 | Windows customer installer | ⛔ | needs Windows + installer toolchain |
 | License Manager installer | ⛔ | needs Windows + installer toolchain |
 | Documentation suite | 🟡 | `docs/` (near-complete; keep current) |

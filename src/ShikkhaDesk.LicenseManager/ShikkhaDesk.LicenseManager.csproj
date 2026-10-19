@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>ShikkhaDesk.LicenseManager</RootNamespace>
+    <AssemblyName>ShikkhaDeskLicenseManager</AssemblyName>
+    <ApplicationIcon>..\..\assets\icons\shikkhadesk.ico</ApplicationIcon>
+    <Product>MERQO ShikkhaDesk License Manager</Product>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ShikkhaDesk.Domain/ShikkhaDesk.Domain.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Licensing/ShikkhaDesk.Licensing.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Diagnostics/ShikkhaDesk.Diagnostics.csproj" />
+  </ItemGroup>
+</Project>

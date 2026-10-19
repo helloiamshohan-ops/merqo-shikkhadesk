@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>ShikkhaDesk.Presentation</RootNamespace>
+    <AssemblyName>ShikkhaDesk</AssemblyName>
+    <ApplicationIcon>..\..\assets\icons\shikkhadesk.ico</ApplicationIcon>
+    <SatelliteResourceLanguages>en;bn</SatelliteResourceLanguages>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ShikkhaDesk.Domain/ShikkhaDesk.Domain.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Accounting/ShikkhaDesk.Accounting.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Licensing/ShikkhaDesk.Licensing.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Application/ShikkhaDesk.Application.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Persistence/ShikkhaDesk.Persistence.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.LanTransport/ShikkhaDesk.LanTransport.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Reporting/ShikkhaDesk.Reporting.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Backup/ShikkhaDesk.Backup.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Diagnostics/ShikkhaDesk.Diagnostics.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Bundle the licensed Bengali font with the app -->
+    <Resource Include="..\..\assets\fonts\NotoSansBengali.ttf">
+      <Link>Fonts\NotoSansBengali.ttf</Link>
+    </Resource>
+  </ItemGroup>
+</Project>

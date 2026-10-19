@@ -1,0 +1,30 @@
+<Window x:Class="ShikkhaDesk.LicenseManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MERQO ShikkhaDesk License Manager (Private)" Height="560" Width="760"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI" Background="{StaticResource BgBrush}">
+    <DockPanel Margin="20">
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="MERQO ShikkhaDesk License Manager" FontSize="20" FontWeight="Bold" Foreground="{StaticResource NavyBrush}" />
+            <TextBlock Text="Private seller-side tool — not for customer distribution." FontSize="12" Foreground="{StaticResource MutedBrush}" Margin="0,2,0,12" />
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Top" Width="360">
+            <TextBlock Text="Institution name" Foreground="{StaticResource InkBrush}" />
+            <TextBox x:Name="InstitutionNameBox" Margin="0,2,0,8" />
+            <TextBlock Text="Institution UID (immutable)" Foreground="{StaticResource InkBrush}" />
+            <TextBox x:Name="InstitutionUidBox" Margin="0,2,0,8" />
+            <TextBlock Text="Max devices (default 5)" Foreground="{StaticResource InkBrush}" />
+            <TextBox x:Name="MaxDevicesBox" Text="5" Margin="0,2,0,8" />
+            <TextBlock Text="Version entitlement" Foreground="{StaticResource InkBrush}" />
+            <TextBox x:Name="VersionEntitlementBox" Text="1.x" Margin="0,2,0,12" />
+            <Button Content="Generate &amp; Sign (test key)" Click="OnSignClick" Padding="12,6"
+                    Background="{StaticResource TealBrush}" Foreground="White" BorderThickness="0" HorizontalAlignment="Left" />
+        </StackPanel>
+
+        <TextBox x:Name="OutputBox" DockPanel.Dock="Bottom" Height="180" Margin="0,12,0,0"
+                 IsReadOnly="True" TextWrapping="Wrap" FontFamily="Consolas" FontSize="12"
+                 VerticalScrollBarVisibility="Auto" />
+    </DockPanel>
+</Window>

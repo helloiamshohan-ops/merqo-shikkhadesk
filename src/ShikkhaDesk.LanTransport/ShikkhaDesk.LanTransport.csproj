@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ShikkhaDesk.LanTransport</RootNamespace>
+    <AssemblyName>ShikkhaDesk.LanTransport</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ShikkhaDesk.Domain/ShikkhaDesk.Domain.csproj" />
+    <ProjectReference Include="../ShikkhaDesk.Application/ShikkhaDesk.Application.csproj" />
+  </ItemGroup>
+</Project>
