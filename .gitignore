@@ -1,0 +1,37 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+
+# .NET
+*.dll
+!assets/**/*.dll
+*.exe
+!assets/**/*.exe
+publish/
+artifacts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Python (asset tooling)
+__pycache__/
+*.pyc
+.venv/
+
+# Local databases / backups
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+backups/
+
+# Secrets — never commit keys
+*.pfx
+*.p12
+*.key
+secrets/
